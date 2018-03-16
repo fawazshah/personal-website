@@ -1,0 +1,121 @@
+body {
+  margin: 10;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  padding: 5px 16px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.55em;
+  margin: 2em 0em 1em 0em;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.3em;
+  margin: 1.3em 0em 1em 0em;
+  font-weight: bold;
+}
+
+figure {
+  display: block;
+  margin: 0em 1em 0em 1em;
+}
+
+ul {
+   width: 100%;
+   display: table;
+   text-align: center;
+}
+
+ul li {
+     display: inline-block;
+     float: none;
+}
+
+.transition-photo {
+  height: 200px;
+  width: 200px;
+  position:relative;
+}
+
+.top {
+  z-index: 1;
+}
+
+.bottom {
+  z-index: 0;
+}
+
+.transition-photo img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.transition-photo img.top:hover {
+  opacity:0;
+}
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F0F0F0;
+  z-index: 100;
+}
+
+.topnav a {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  font-size: 70%;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 0em 2em 0em 2em;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+   color: #00DCFF;
+}
+
+.topnav a.active {
+  color: #00DCFF;
+}
+
+.main {
+  margin: 0% 10% 0% 10%;
+  padding-top: 80px;
+}
+
+.main .QKD h3{
+  margin-top: 4em;
+}
+
+.main p {
+  text-align: justify;
+}
+
+.references {
+  background-color:  #e6e6e6;
+  padding: 30px 30px;
+  margin: 0% 10% 0% 10%;
+}
+
+.references h3 {
+  margin-top: 0.5em;
+}
