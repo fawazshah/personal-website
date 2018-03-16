@@ -3,12 +3,13 @@ body {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.center {
+.title {
   text-align: center;
-}
-
-h1 {
-  padding: 5px 16px;
+  margin: 0px;
+  font-size: 3em;
+  color: #47453c;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  margin: 0px;
 }
 
 h2 {
@@ -30,15 +31,8 @@ figure {
   margin: 0em 1em 0em 1em;
 }
 
-ul {
-   width: 100%;
-   display: table;
-   text-align: center;
-}
-
-ul li {
+li {
      display: inline-block;
-     float: none;
 }
 
 .transition-photo {
@@ -68,16 +62,19 @@ ul li {
   opacity:0;
 }
 
-.topnav {
-  overflow: hidden;
+.sidenav {
+  height: 100%; 
+  width: 20%;
   position: fixed;
+  z-index: 1;
   top: 0;
-  width: 100%;
-  background-color: #F0F0F0;
-  z-index: 100;
+  left: 0;
+  background-color: #fff7d6;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.topnav a {
+.sidenav a {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
   display: block;
@@ -85,15 +82,15 @@ ul li {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  padding: 0em 2em 0em 2em;
+  padding: 0.5em 2em 0.5em 2em;
   text-decoration: none;
 }
 
-.topnav a:hover {
+.sidenav a:hover {
    color: #00DCFF;
 }
 
-.topnav a.active {
+.sidenav a.active {
   color: #00DCFF;
 }
 
