@@ -3,20 +3,6 @@ body {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h2 {
-  display: block;
-  font-size: 1.55em;
-  margin: 2em 0em 1em 0em;
-  font-weight: bold;
-}
-
-h3 {
-  display: block;
-  font-size: 1.3em;
-  margin: 1.3em 0em 1em 0em;
-  font-weight: bold;
-}
-
 figure {
   display: block;
   margin: 0em 1em 0em 1em;
@@ -26,18 +12,63 @@ li {
      display: inline-block;
 }
 
+.sidenav {
+  height: 100%; 
+  width: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #fff7d6, white);
+  /*background-color: #fff7d6; */
+  overflow-x: hidden;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.sidenav a {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  font-size: 70%;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 0.5em 2em 0.5em 2em;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+   color: #00DCFF;
+}
+
+.sidenav a.active {
+  color: #00DCFF;
+}
+
+.main {
+  margin: 0% 10% 0% 30%;
+  padding-top: 12%;
+}
+
 .title {
   text-align: center;
   font-size: 3em;
-  color: #47453c;
+  color: #28a1a2;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
   margin: 0px;
 }
 
 .subheading {
-    font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
-    text-align: center;
-    margin: 1em 2em 1em 2em;
+  text-align: center;
+  margin: 1em 3em 3em 3em;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  font-size: 70%;
+  font-weight: 400;
+  color: #447677;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .transition-photo {
@@ -65,59 +96,4 @@ li {
 
 .transition-photo img.top:hover {
   opacity:0;
-}
-
-.sidenav {
-  height: 100%; 
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #fff7d6;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  letter-spacing: 1px;
-  display: block;
-  font-size: 70%;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-  padding: 0.5em 2em 0.5em 2em;
-  text-decoration: none;
-}
-
-.sidenav a:hover {
-   color: #00DCFF;
-}
-
-.sidenav a.active {
-  color: #00DCFF;
-}
-
-.main {
-  margin: 0% 10% 0% 10%;
-  padding-top: 80px;
-}
-
-.main .QKD h3{
-  margin-top: 4em;
-}
-
-.main p {
-  text-align: justify;
-}
-
-.references {
-  background-color:  #e6e6e6;
-  padding: 30px 30px;
-  margin: 0% 10% 0% 10%;
-}
-
-.references h3 {
-  margin-top: 0.5em;
 }
