@@ -3,15 +3,6 @@ body {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.title {
-  text-align: center;
-  margin: 0px;
-  font-size: 3em;
-  color: #47453c;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
-  margin: 0px;
-}
-
 h2 {
   display: block;
   font-size: 1.55em;
@@ -33,6 +24,20 @@ figure {
 
 li {
      display: inline-block;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: #47453c;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  margin: 0px;
+}
+
+.subheading {
+    font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-align: center;
+    margin: 1em 2em 1em 2em;
 }
 
 .transition-photo {
