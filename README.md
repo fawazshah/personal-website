@@ -1,3 +1,3 @@
-#Fawaz Shah - Personal Website
+# Fawaz Shah - Personal Website
 
-Coded using basic HTML and CSS.
+Coded using raw HTML and CSS.
