@@ -75,6 +75,10 @@ body {
   color: #28a1a2;
 }
 
+.social-media-icons {
+  margin: 25%;
+}
+
 .fab {
   padding: 15px;
   font-size: 20px;
