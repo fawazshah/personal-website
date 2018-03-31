@@ -66,7 +66,7 @@ body {
    color: #28a1a2;
 }
 
-.navlink:active {
+.navlink.active {
   color: #28a1a2;
 }
 
