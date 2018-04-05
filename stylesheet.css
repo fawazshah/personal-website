@@ -23,6 +23,11 @@ a:hover {
    color: #28a1a2;
 }
 
+a.active {
+   color: #28a1a2;
+}
+
+
 .sidenav {
   height: 100%; 
   width: 20%;
