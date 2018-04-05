@@ -3,15 +3,15 @@
   to {opacity: 1;}
 }
 
-body {
-  margin: 10;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 .one-second-fadeIn {
   opacity: 0;
   animation: fadeIn 1s;
   animation-fill-mode: forwards; 
+}
+
+body {
+  margin: 10;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .sidenav {
@@ -128,10 +128,16 @@ body {
   color: #000;
 }
 
+/* total width of main is width + padding-left + padding-right = 50% + 15% + 15% = 80% */
 .main {
-  margin: 0% 10% 0% 30%;
-  padding-top: 10%;
+  float: right;
+  width: 50%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20%;
+  top: 0;
   text-align: center;
+  border: 1px solid black;
 }
 
 .main-title {
@@ -141,6 +147,10 @@ body {
 .main-link {
   font-style: italic;
   text-decoration: none;
+}
+
+.center {
+  vertical-align: middle;
 }
 
 .spacer {
