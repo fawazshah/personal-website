@@ -10,7 +10,17 @@
 }
 
 body {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: #0000EE;
+}
+
+a:hover {
+   color: #28a1a2;
 }
 
 .sidenav {
@@ -53,21 +63,12 @@ body {
 
 .navlink {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
   letter-spacing: 2px;
   display: block;
-  color: #000000;
-  font-weight: bold;
   text-transform: uppercase;
   padding: 0.5em 2em;
   text-decoration: none;
-}
-
-.navlink:hover {
-   color: #28a1a2;
-}
-
-.navlink.active {
-  color: #28a1a2;
 }
 
 .social-media-icons {
@@ -106,45 +107,18 @@ body {
   color: #000;
 }
 
-/* .CV class unncessesary since CV button may not go with fab buttons in sidenav anymore */
-
-.CV:hover {
-  background: #000000;
-  color: #fff;
-}
-
-.CV {
-  /* mostly copied from .fab class, so no font-awesome side effects*/
-  margin: 2px;
-  border: 1px solid #000;
-  border-radius: 35%;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-
-  font-size: 15px;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
-  color: #000;
-}
-
 /* total width of main is width + padding-left + padding-right = 40% + 20% + 20% = 80% */
 .main {
   float: right;
   width: 40%;
   padding-left: 20%;
   padding-right: 20%;
-  padding-top: 10%;
+  padding-top: 12%;
   top: 0;
-  text-align: justify;
 }
 
 .main-title {
   text-decoration: underline;
-}
-
-.main-link {
-  font-style: italic;
-  text-decoration: none;
 }
 
 .main-center {
