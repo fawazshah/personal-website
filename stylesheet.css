@@ -39,7 +39,7 @@ td {
 }
 
 /* desktop version of sidenav, sidenav takes up left 20% of viewport */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 48em) {
   .sidenav {
     height: 100%; 
     width: 20%;
@@ -51,6 +51,7 @@ td {
     z-index: 1;
   }
 
+  /* below code isn't running for some reason */
   .social-media-icons {
     margin: 50% 0% 0% 0%;
   }
