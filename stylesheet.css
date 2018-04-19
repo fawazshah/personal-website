@@ -120,7 +120,6 @@ td {
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 12%;
   top: 0;
 }
 
@@ -159,6 +158,7 @@ td {
     width: 60%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 12%;
   }
 }
 
