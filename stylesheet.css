@@ -32,6 +32,11 @@ a.active {
 
 td {
   padding: 2px 10px;
+  border-right: 1px solid black;
+}
+
+td:last-child {
+  border: none;
 }
 
 /* on mobile, sidenav occupies top of viewport */
