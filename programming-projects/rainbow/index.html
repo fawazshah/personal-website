@@ -1,80 +1,0 @@
-<html>
-	<head>
-		<title>RAINBOW</title>
-
-		<!-- © Fawaz Shah 2016 --!>
-
-		<style>
-			div {width: calc(100%/6); height: 100%; float: left;}
-			p {margin-left: 5%; font-family: Verdana; font-size: 80%;}
-			.red {background-color: #ff0000}		/* classes of divs have colours assigned to them */
-			.orange {background-color: ffa500}
-			.yellow {background-color: #ffff00}
-			.green {background-color: #008000}
-			.blue {background-color: #0000ff}
-			.purple {background-color: #800080}
-		</style>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery imported --!>
-		<script>
-			$(document).ready(function () {
-				var first_counter = 0;		//counters show what colour the div is (based on index of 'classes' list)
-				var second_counter = 1;
-				var third_counter = 2;
-				var fourth_counter = 3;
-				var fifth_counter = 4;
-				var sixth_counter = 5;
-				var classes = ["red", "orange", "yellow", "green", "blue", "purple"];
-
-				$(".first").click(function () {		//when div is clicked, its counter increments by 1 (it goes back to 0 after it reaches 5)
-					first_counter += 1;			//in this way, the div cycles through all the colours of the rainbow
-					if (first_counter == 6) {
-						first_counter = 0;
-						$(this).removeClass(classes[5]);
-						$(this).addClass(classes[0]);
-					} else {
-						$(this).removeClass(classes[first_counter - 1]);
-						$(this).addClass(classes[first_counter]);
-					};
-				});
-
-				$(".second").click(function () {
-					second_counter += 1;
-					if (second_counter == 6) {
-						second_counter = 0;
-						$(this).removeClass(classes[5]);
-						$(this).addClass(classes[0]);
-					} else {
-						$(this).removeClass(classes[second_counter - 1]);
-						$(this).addClass(classes[second_counter]);
-					};
-				});
-
-				$(".third").click(function () {					third_counter += 1;					if (third_counter == 6) {						third_counter = 0;
-						$(this).removeClass(classes[5]);						$(this).addClass(classes[0]);					} else {
-						$(this).removeClass(classes[third_counter - 1]);						$(this).addClass(classes[third_counter]);					};				});
-
-				$(".fourth").click(function () {					fourth_counter += 1;					if (fourth_counter == 6) {						fourth_counter = 0;
-						$(this).removeClass(classes[5]);						$(this).addClass(classes[0]);					} else {
-						$(this).removeClass(classes[fourth_counter - 1]);						$(this).addClass(classes[fourth_counter]);					};				});
-
-				$(".fifth").click(function () {					fifth_counter += 1;					if (fifth_counter == 6) {						fifth_counter = 0;
-						$(this).removeClass(classes[5]);						$(this).addClass(classes[0]);					} else {
-						$(this).removeClass(classes[fifth_counter - 1]);						$(this).addClass(classes[fifth_counter]);					};				});
-
-				$(".sixth").click(function () {					sixth_counter += 1;					if (sixth_counter == 6) {						sixth_counter = 0;
-						$(this).removeClass(classes[5]);						$(this).addClass(classes[0]);					} else {
-						$(this).removeClass(classes[sixth_counter - 1]);						$(this).addClass(classes[sixth_counter]);					};				});
-			});
-		</script>
-	</head>
-	<body>
-		<div class="first red">		<!-- ordinal number class used to identify divs left-to-right, colour class refers to colour of divs --!>
-			<p>(click us!)</p>
-		</div>
-		<div class="second orange"></div>
-		<div class="third yellow"></div>
-		<div class="fourth green"></div>
-		<div class="fifth blue"></div>
-		<div class="sixth purple"></div>
-	</body>
-</html>
