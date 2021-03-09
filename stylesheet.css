@@ -136,16 +136,12 @@ td:last-child {
   top: 0;
 }
 
-.main-title {
-  text-decoration: underline;
-}
-
 .main-center {
   margin-top: 15%;
 }
 
 .spacer {
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 
 /* on desktop, sidenav takes up left-hand 25% and main takes up right-hand 75% */
