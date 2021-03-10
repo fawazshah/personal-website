@@ -10,7 +10,7 @@ function createSidenav(page) {
       <div class="sidenav-contents">
         <h1 class="title">FAWAZ</h1>
         <h1 class="title">SHAH</h1>
-        <h5 class="subheading">4th year<br>MEng Mathematics and Computer Science<br>Imperial College London</h5>
+        <h5 class="subheading">4th year<br>MEng Maths and Computer Science<br>Imperial College London</h5>
         <div class="navlinks">
           <a class="navlink${pageStatuses[0]}" href="index.html">About</a>
           <a class="navlink${pageStatuses[1]}" href="notes.html">Imperial College Notes</a>
