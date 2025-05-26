@@ -13,8 +13,8 @@ function createSidenav(page) {
         <br>
         <div class="navlinks">
           <a class="navlink${pageStatuses[0]}" href="index.html">About</a>
-          <a class="navlink${pageStatuses[1]}" href="notes.html">Imperial College Notes</a>
-          <a class="navlink${pageStatuses[2]}" href="project.html">Final Year Project</a>
+          <a class="navlink${pageStatuses[1]}" href="project.html">Final Year Project</a>
+          <a class="navlink${pageStatuses[2]}" href="notes.html">Imperial College Notes</a>
         </div>
         <div class="social-media-icons">
           <a href="https://github.com/fawazshah" class="fab fa-github"></a>
