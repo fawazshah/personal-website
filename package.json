@@ -1,22 +1,20 @@
 {
-  "name": "lonely-limit",
-  "type": "module",
+  "name": "fawazshah",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.12",
-    "@astrojs/rss": "^4.0.14",
-    "@astrojs/sitemap": "^3.6.0",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "astro": "^5.16.4",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
-    "sharp": "^0.34.3"
+    "@astrojs/mdx": "^4.2.0",
+    "@astrojs/svelte": "^7.0.6",
+    "astro": "^5.5.2",
+    "reading-time": "^1.5.0",
+    "rehype-external-links": "^3.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-smartypants": "^2.0.0"
   }
 }
