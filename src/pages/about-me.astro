@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'About';
+const description = 'About your blog.';
+const permalink = `${Astro.site.href}about-me`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="about-me">
+  <div class="container">
+    <h1>About Me</h1>
+    <p>👨‍💻 I'm a full-stack engineer, keen on solving hard problems and delivering quality, reliable features to users. I'm also very passionate about good communication and public speaking skills.</p>
+    <p>📈 I currently work at Bloomberg LP in the Index ESG Data team, focusing on ingestion of millions of ESG datapoints in a fast and fault-tolerant way. I mainly use C# and React/Typescript, and I work with Postgres for data storage.</p>
+    <p>🎓 Before this, I studied Maths & Computer Science at Imperial College London, graduating in 2021 with First Class Honours. As part of this I studied Japanese for 2 years!</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
