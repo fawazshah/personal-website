@@ -5,7 +5,7 @@ publishDate: Nov 2025
 description: Maths notes from my time at Imperial.
 ---
 
-In my first year at Imperial College London in 2018, I wrote summary notes for all the modules in the Maths half of the Joint Maths & Computing degree.
+In my first year at Imperial College in 2018, I wrote summary notes for all the modules in the Maths half of the Joint Maths & Computing degree.
 
 They are available for download below, and are hosted on my [GitHub](https://github.com/fawazshah/jmc-first-year-maths). Be warned - they are unofficial.
 
