@@ -5,10 +5,13 @@ import remarkGfm from 'remark-gfm'
 import remarkSmartypants from 'remark-smartypants'
 import rehypeExternalLinks from 'rehype-external-links'
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://fawazshah.github.io',
   integrations: [mdx(), svelte()],
+
   markdown: {
     shikiConfig: {
       theme: 'nord',
@@ -23,4 +26,6 @@ export default defineConfig({
       ],
     ],
   },
+
+  adapter: netlify(),
 })
