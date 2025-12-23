@@ -9,7 +9,7 @@ import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://fawazshah.github.io',
+  site: 'https://fawazshah.xyz',
   integrations: [mdx(), svelte()],
 
   markdown: {

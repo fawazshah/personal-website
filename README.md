@@ -1,6 +1,6 @@
 # Fawaz Shah personal website
 
-Available at [fawazshah.github.io](https://fawazshah.github.io/).
+Available at [fawazshah.xyz](https://fawazshah.xyz/).
 
 To run locally:
 
