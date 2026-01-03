@@ -1,8 +1,8 @@
 ---
-title: Final Year Thesis
-slug: final-year-thesis
+title: Imperial College Thesis
+slug: imperial-college-thesis
 publishDate: Nov 2025
-description: My university final year project.
+description: My final year project at Imperial College.
 ---
 
 The topic of my final year dissertation at Imperial College was <i>Detecting Political Bias On Reddit With Transfer Learning.</i> I researched NLP models to predict the political bias of news articles based on the related comments on social media websites, and vice versa, focusing on Reddit due to its unique subreddits feature.
