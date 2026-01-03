@@ -1,6 +1,6 @@
 ---
-title: Imperial College Notes
-slug: imperial-college-notes
+title: Imperial College Maths Notes
+slug: imperial-college-maths-notes
 publishDate: Nov 2025
 description: Maths notes from my time at Imperial.
 ---
