@@ -1,9 +1,15 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const title = 'Fawaz Shah';
+const title = "Fawaz Shah";
 const description = "Fawaz's personal site";
 const permalink = Astro.site.href;
+
+library.add(faLinkedin, faGithub);
+const linkedinIcon = icon({ prefix: "fab", iconName: faLinkedin.iconName });
+const githubIcon = icon({ prefix: "fab", iconName: faGithub.iconName });
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
@@ -11,14 +17,33 @@ const permalink = Astro.site.href;
     <div class="home-copy">
       <h1>Hi, I'm Fawaz.</h1>
       <p>I'm a software engineer from London 🇬🇧🎡💂</p>
-      <p>Check out more about me above! </p>
-      <p><a href="https://www.linkedin.com/in/fawaz-shah/" target="_blank">LinkedIn</a> <br/> <a href="https://github.com/fawazshah/" target="_blank">GitHub</a> </p>
+      <div class="fa-row">
+        <div class="fa-icon">
+          <a href="https://www.linkedin.com/in/fawaz-shah/" target="_blank">
+            <Fragment set:html={linkedinIcon.html}/>
+          </a>
+        </div>
+        <div class="fa-icon">
+          <a href="https://github.com/fawazshah/" target="_blank">
+            <Fragment set:html={githubIcon.html}/>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="hero-image-container">
       <picture>
-        <source srcset="/assets/homepage-photo.jpg" media="(min-width: 600px)">
-        <img class="hero-image" alt="Illustration of person reading a book" src="/assets/homepage-photo.jpg" width="550" height="466">
+        <source
+          srcset="/assets/homepage-photo.jpg"
+          media="(min-width: 600px)"
+        />
+        <img
+          class="hero-image"
+          alt="Illustration of person reading a book"
+          src="/assets/homepage-photo.jpg"
+          width="550"
+          height="466"
+        />
       </picture>
     </div>
   </div>
@@ -64,7 +89,7 @@ const permalink = Astro.site.href;
   }
 
   .caption {
-    font-size: .8em;
+    font-size: 0.8em;
     font-style: italic;
     text-align: left;
   }
@@ -73,6 +98,16 @@ const permalink = Astro.site.href;
     width: 100%;
     max-width: 550px;
     margin-bottom: 1em;
+  }
+
+  .fa-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  .fa-icon {
+    width: 3em;
   }
 
   @media (max-width: 1200px) {
@@ -95,5 +130,9 @@ const permalink = Astro.site.href;
       padding-bottom: 2em;
       text-align: center;
     }
+    .fa-row {
+      justify-content: center;
+    }
   }
+
 </style>
