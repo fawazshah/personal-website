@@ -1,5 +1,5 @@
 ---
-title: Imperial College Thesis
+title: My Imperial College thesis
 slug: imperial-college-thesis
 publishDate: Dec 2025
 description: My MEng thesis, focusing on using LLMs to detect bias on social media.

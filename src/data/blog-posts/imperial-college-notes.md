@@ -1,5 +1,5 @@
 ---
-title: Imperial College Maths Notes
+title: My Imperial College maths notes
 slug: imperial-college-maths-notes
 publishDate: Nov 2025
 description: First year maths notes that I took at Imperial.
