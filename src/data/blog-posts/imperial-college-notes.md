@@ -2,7 +2,7 @@
 title: Imperial College Maths Notes
 slug: imperial-college-maths-notes
 publishDate: Nov 2025
-description: Maths notes from my time at Imperial.
+description: First year maths notes that I took at Imperial.
 ---
 
 In my first year at Imperial College in 2018, I wrote summary notes for all the modules in the Maths half of the Joint Maths & Computing degree.
