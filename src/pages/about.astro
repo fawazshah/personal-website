@@ -16,6 +16,13 @@ const permalink = `${Astro.site.href}about-me`;
 </BaseLayout>
 
 <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+
   .about-image {
     float: right;
     margin: -3em -7em 2em 2em;
@@ -28,6 +35,10 @@ const permalink = `${Astro.site.href}about-me`;
   }
 
   @media (max-width: 1020px) {
+    .container {
+      margin-top: 0em;
+    }
+
     .about-image {
       float: none;
       margin: 0 auto 2em;
