@@ -34,6 +34,14 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
 </BaseLayout>
 
 <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8rem;
+    max-width: 42em;
+  }
+
   h2,
   .post-item-footer {
     font-family: var(--font-family-sans);
