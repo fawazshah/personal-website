@@ -2,7 +2,7 @@
 title: Playing around with Rust
 slug: rust
 publishDate: Feb 2026
-description: Thoughts coming to Rust from mainly C# and Python experience.
+description: Thoughts on Rust, coming from mainly C# and Python experience.
 ---
 
 Over the last few months, out of curiosity, I've been teaching myself Rust. Rust is a language designed with rock-solid memory safety in mind compared to languages like C++. It features an ownership system and the infamous 'borrow-checker' to eliminate many memory safety bugs at compile time.
