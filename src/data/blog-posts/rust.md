@@ -42,7 +42,7 @@ error[E0382]: borrow of moved value: `s`
    |
 ```
 
-- Perhaps my favourite feature: all variables are immutable by default unless marked with `mut`. This makes debugging so much easier compared to using `var`/`let` in C# or Typescript where you have to watch out for variables being modified as you step through. This is also enforced at compile time.
+- Perhaps my favourite feature: all variables are immutable by default unless marked with `mut`. This makes debugging so much easier compared to using `var`/`let` in C# or Typescript, where you have to watch out for variables being modified as you step through. This is also enforced at compile time.
 
 ```rust
 ➜  10_references git:(main) ✗ cargo run
@@ -63,7 +63,7 @@ For more information about this error, try `rustc --explain E0596`.
 
 The helpful `rustc --explain` command also gives more details about each error, with examples.
 
-It's worth mentioning that aside from the typical `x86_64` compilation target, Rust can also be compiled to [WebAssembly](https://webassembly.org/), or `wasm`. This is a low-level instruction format designed to be executable by all major web browsers. Since 2017 it has been supported on Chrome, Firefox, Safari, Opera, and more.
+It's worth mentioning that aside from the typical compilation targets like `x86_64`, Rust can also be compiled to [WebAssembly](https://webassembly.org/), or `wasm`. This is a low-level instruction format designed to be executable by all major web browsers. Since 2017 it has been supported on Chrome, Firefox, Safari, Opera, and more.
 
 <div style="text-align: center;">
   <img src="/assets/webassembly.png" alt="WebAssembly logo" />
