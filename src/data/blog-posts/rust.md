@@ -42,7 +42,7 @@ error[E0382]: borrow of moved value: `s`
    |
 ```
 
-- Perhaps my favourite feature: all variables are immutable by default unless marked with `mut`. This makes debugging so much easier compared to using `var`/`let` in C#/Typescript where you have to watch out for variables being modified as you step through. This is also enforced at compile time.
+- Perhaps my favourite feature: all variables are immutable by default unless marked with `mut`. This makes debugging so much easier compared to using `var`/`let` in C# or Typescript where you have to watch out for variables being modified as you step through. This is also enforced at compile time.
 
 ```rust
 ➜  10_references git:(main) ✗ cargo run
