@@ -7,7 +7,7 @@ description: Thoughts on Rust, coming from C# development.
 
 Over the last few months I've been teaching myself Rust. It's a language designed with rock-solid memory safety in mind compared to languages like C++. It features an ownership system and the infamous 'borrow-checker' to eliminate many memory safety bugs at compile time.
 
-I wanted to experiment with it after using [Perspective](https://perspective-dev.github.io/) for a project at work. It's an open-source UI component built for visualising large amounts of streaming data. It was a surprise looking through the code for a UI component to find it was written in Rust!
+I wanted to experiment with it after using [Perspective](https://perspective-dev.github.io/) for a project at work. It's an open-source UI component built for visualising large amounts of streaming data. It was a surprise looking through the code to find it was written in Rust!
 
 I've learnt a lot by using the borrow-checker, but my favourite features of the language have actually been completely unrelated to borrow-checking:
 
