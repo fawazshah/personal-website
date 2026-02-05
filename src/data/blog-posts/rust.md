@@ -9,9 +9,9 @@ Over the last few months I've been teaching myself Rust. It's a language designe
 
 I wanted to experiment with it after using [Perspective](https://perspective-dev.github.io/) for a project at work. It's an open-source UI component built for visualising large amounts of streaming data. It was a surprise looking through the code to find it was written in Rust!
 
-I've learnt a lot by using the borrow-checker, but my favourite features of the language have actually been completely unrelated to borrow-checking:
+I've learnt a lot by using the borrow-checker, but my favourite features of the language have actually been completely unrelated to memory management:
 
-- Support for generics in enums. You can define enums that would need a fully-fledged class for equivalent behaviour in C#. An example is the below, which is a very simple implementation of union types:
+- Support for generics in enums. You can define enums that you would need a fully-fledged class for in C#. An example is the below, which is a very simple implementation of union types:
 
 ```rust
 enum Either<L, R> {
@@ -58,18 +58,18 @@ help: consider changing this to be mutable
 For more information about this error, try `rustc --explain E0596`.
 ```
 
-The helpful `rustc --explain` command also gives more details about each error, with examples.
-
  - Finally, extremely helpful error messages! The Rust compiler will point to the exact line and expression with a mistake. Here, when I reference an undeclared variable, it suggests one with a similar name:
 
 ```rust
 ➜  git:(main) ✗ cargo run
    Compiling references v0.1.0 (/Users/fawaz/learning/rust/rust_book/10_references)
 error[E0425]: cannot find value `mystring` in this scope
- --> src/main.rs:4:31
+ --> src/main.rs:7:31
   |
-4 |     println!("The length of '{mystring}' is {length}");
+7 |     println!("The length of '{mystring}' is {length}");
   |                               ^^^^^^^^ help: a local variable with a similar name exists: `my_string`
+
+For more information about this error, try `rustc --explain E0425`.
 ```
  
 And here's what it prints when I make the mistake of borrowing a value that has been moved into a function. It highlights the three contributors of the error!
@@ -89,9 +89,11 @@ error[E0382]: borrow of moved value: `s`
  6 |     println!("{s}");              // this would cause a compile-time error!
    |                ^ value borrowed here after move
    |
+
+For more information about this error, try `rustc --explain E0382`.
 ```
 
-<br />
+You can see after every error above, there's a helpful `rustc --explain` command that gives more details about the error, with examples.
 
 It's worth mentioning that aside from the typical compilation targets like `x86_64`, Rust can also be compiled to [WebAssembly](https://webassembly.org/), or `wasm`. This is a low-level instruction format designed to be executable by all major web browsers. Since 2017 it has been supported on Chrome, Firefox, Safari, Opera, and more.
 
@@ -99,4 +101,4 @@ It's worth mentioning that aside from the typical compilation targets like `x86_
   <img src="/assets/webassembly.png" alt="WebAssembly logo" />
 </div>
 
-It's how web components like Perspective can be written in Rust, completely outside the web ecosystem. You can see some examples of data visualised with Perspective [here](https://perspective-dev.github.io/examples/).
+It's how web components like Perspective can be written in Rust, completely outside the web ecosystem! You can see some examples of data visualised with Perspective [here](https://perspective-dev.github.io/examples/).
